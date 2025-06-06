@@ -1,4 +1,4 @@
-let tempature = prompt();
+let tempature = prompt("Enter tempature in fahrenheit:");
 
 const convertToCelcius = (tempature) => {
   let celsius = (tempature - 32) * (5 / 9);
