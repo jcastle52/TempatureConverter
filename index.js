@@ -7,42 +7,18 @@ const convertToCelcius = (tempature) => {
 
 const describeTempature = (tempature) => {
   celsius = convertToCelcius(tempature);
+  let convertText = tempature + " °F is equal to " + celsius + " °C. ";
 
   if (celsius < 0) {
-    return (
-      tempature +
-      " °F is equal to " +
-      celsius +
-      " °C. This is very cold and you should stay home."
-    );
+    return convertText + "This is very cold and you should stay home.";
   } else if (celsius < 20) {
-    return (
-      tempature +
-      " °F is equal to " +
-      celsius +
-      " °C. This is cold so put on a jacket."
-    );
+    return convertText + "This is cold so put on a jacket.";
   } else if (celsius < 30) {
-    return (
-      tempature +
-      " °F is equal to " +
-      celsius +
-      " °C. This is warm. Good day to go to the park."
-    );
+    return convertText + "This is warm. Good day to go to the park.";
   } else if (celsius < 40) {
-    return (
-      tempature +
-      " °F is equal to " +
-      celsius +
-      " °C. This is hot. Time to go to the beach!"
-    );
+    return convertText + "This is hot. Time to go to the beach!";
   } else if (celsius >= 40) {
-    return (
-      tempature +
-      " °F is equal to " +
-      celsius +
-      " °C. This is very hot. Stay home and crank the A/C."
-    );
+    return convertText + "This is very hot. Stay home and crank the A/C.";
   }
 };
 
